@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head.ejs'); %>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheets/dashboardStyle.css">
+    <link rel="stylesheet" href="stylesheets/listCarsStyle.css">
+
+    <title>List Car</title>
+</head>
+
+<body>
+
+    <div class="container-fluid p-0">
+
+        <!-- NAVBAR SECTION BEGIN -->
+        <%- include('partials/navbar.ejs'); %>
+        <!-- NAVBAR SECTION END -->
+
+        <!-- SIDEBAR SECTION BEGIN -->
+        <%- include('partials/sidebar.ejs'); %>
+        <!-- SIDEBAR SECTION END -->
+
+        <!-- CONTENT SECTION BEGIN -->
+        <!-- BAGIAN ISI CONTENT DI MULAI DARI SINI -->
+        <section class="content-section ps-5 pe-4">
+            <div class="row">
+                <div class="col-lg-0" id="show-col-lg-0">
+                    <div class="adding-space" style="width: 300px;">
+                    </div>
+                </div>
+                <div class="col-lg-12" id="show-col-lg-12">
+                    <!-- -------------------------- -->
+                    <!-- COPY DISINI ISI CONTENTNYA -->
+                    <!-- -------------------------- -->
+
+                    <div class="container-fluid">
+                        <div class="list-button">
+                            <span class="list-car">List Car</span>
+                            <div class="button-right">
+                                <button type="button" class="btn btn-primary">
+                                    <img src="images/icon/fi_plus.png" alt="icon-plus"> Add New Car
+                                </button>
+                            </div>
+                        </div>
+                        <div class="btn-group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-primary">All</button>
+                            <button type="button" class="btn btn-outline-primary">Small</button>
+                            <button type="button" class="btn btn-outline-primary">Medium</button>
+                            <button type="button" class="btn btn-outline-primary">Large</button>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <img src="images/fi_car.png" alt="img-car">
+                                </h5>
+                                <p>Nama/Tipe Mobil</p>
+                                <h6>Rp 430.000 / hari</h6>
+                                <p class="card-text">
+                                    <img src="images/icon/fi_key.png" alt="icon-key">Start rent - Finish rent
+                                </p>
+                                <p class="card-text">
+                                    <img src="images/icon/fi_clock.png " alt="icon-clock">Updated at 4 Apr 2022, 09.00
+                                </p>
+                                <div class="btn-group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-danger">
+                                        <img src="images/icon/fi_trash-2.png" alt="icon-trash">Delete
+                                    </button>
+                                    <button type="button" class="btn btn-success">
+                                        <img src="images/icon/fi_edit.png" alt="icon-edit">Edit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- BAGIAN ISI CONTENT BERAKHIR Di SINI -->
+        <!-- CONTENT SECTION END -->
+    </div>
+
+    <%- include('partials/script.ejs'); %>
+</body>
+
+</html>
