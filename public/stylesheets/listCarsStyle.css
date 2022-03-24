@@ -129,3 +129,7 @@ span.list-car {
   background-color: #5cb85f;
   color: white;
 }
+
+.modal {
+  margin: 150px auto;
+}

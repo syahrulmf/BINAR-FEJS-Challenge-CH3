@@ -54,33 +54,53 @@
                             <button type="button" class="btn btn-outline-primary">Medium</button>
                             <button type="button" class="btn btn-outline-primary">Large</button>
                         </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <img src="images/fi_car.png" alt="img-car">
-                                </h5>
-                                <p>Nama/Tipe Mobil</p>
-                                <h6>Rp 430.000 / hari</h6>
-                                <p class="card-text">
-                                    <img src="images/icon/fi_key.png" alt="icon-key">Start rent - Finish rent
-                                </p>
-                                <p class="card-text">
-                                    <img src="images/icon/fi_clock.png " alt="icon-clock">Updated at 4 Apr 2022, 09.00
-                                </p>
-                                <div class="btn-group" aria-label="Basic example">
-                                    <button type="button" class="btn btn-danger">
-                                        <img src="images/icon/fi_trash-2.png" alt="icon-trash">Delete
-                                    </button>
-                                    <button type="button" class="btn btn-success">
-                                        <img src="images/icon/fi_edit.png" alt="icon-edit">Edit
-                                    </button>
+                        <div class="row">
+                            <div class="card col-md-4 me-2">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <img src="images/fi_car.png" alt="img-car">
+                                    </h5>
+                                    <p>Nama/Tipe Mobil</p>
+                                    <h6>Rp 430.000 / hari</h6>
+                                    <p class="card-text">
+                                        <img src="images/icon/fi_key.png" alt="icon-key">Start rent - Finish rent
+                                    </p>
+                                    <p class="card-text">
+                                        <img src="images/icon/fi_clock.png " alt="icon-clock">Updated at 4 Apr 2022, 09.00
+                                    </p>
+                                    <div class="btn-group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <img src="images/icon/fi_trash-2.png" alt="icon-trash">Delete
+                                        </button>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        <!-- End Modal -->
+                                        <button type="button" class="btn btn-success">
+                                            <img src="images/icon/fi_edit.png" alt="icon-edit">Edit
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
         <!-- BAGIAN ISI CONTENT BERAKHIR Di SINI -->
         <!-- CONTENT SECTION END -->
