@@ -1,167 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <%- include('partials/head.ejs'); %>
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="stylesheets/dashboardStyle.css">
-    <link rel="stylesheet" href="stylesheets/newCarStyle.css">
-
-    <title>Add New Car</title>
-</head>
-
-<body>
-
-    <div class="container-fluid p-0">
-
-        <!-- NAVBAR SECTION BEGIN -->
-        <%- include('partials/navbar.ejs'); %>
-        <!-- NAVBAR SECTION END -->
-
-        <!-- SIDEBAR SECTION BEGIN -->
-        <%- include('partials/sidebar.ejs'); %>
-        <!-- SIDEBAR SECTION END -->
-
-        <!-- CONTENT SECTION BEGIN -->
-        <!-- BAGIAN ISI CONTENT DI MULAI DARI SINI -->
-        <section class="content-section ps-5 pe-4">
-            <div class="row">
-                <div class="col-lg-0" id="show-col-lg-0">
-                    <div class="adding-space" style="width: 300px;">
-                    </div>
-                </div>
-                <div class="col-lg-12" id="show-col-lg-12">
-                    <!-- -------------------------- -->
-                    <!-- COPY DISINI ISI CONTENTNYA -->
-                    <!-- -------------------------- -->
-
-                    <section id="page-5">
-                        <div class="container pt-4">
-                            <div class="row">
-                            <div class="col-12">
-                                <div class="sub-tree d-flex mt-3 mb-3">
-                                <a href="#">
-                                    <p class="fw-bold">Cars</p>
-                                </a>
-                                <i class="fa fa-solid fa-chevron-right mx-2"></i>
-                                <a href="#">
-                                    <p class="fw-bold">List Car</p>
-                                </a>
-                                <i class="fa fa-solid fa-chevron-right mx-2"></i>
-                                <a href="#">
-                                    <p>Add New Car</p>
-                                </a>
-                                </div>
-                                <h2>Add New Car</h2>
-                                <div class="form-body mb-3">
-                                <form>
-                                    <div class="row">
-                                    <div class="col-lg-3">
-                                        <label for="inputName" class="col-form-label">Nama</label>
-                                        <label for="wajib" style="color: red">*</label>
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <input type="text" id="inputNama6" class="form-control" placeholder="Nama" />
-                                        <small id="namaHelp" class="form-text text-muted"></small>
-                                    </div>
-                                    </div>
-                    
-                                    <div class="row">
-                                    <div class="col-lg-3">
-                                        <label for="inputPassword6" class="col-form-label">Harga</label>
-                                        <label for="wajib" style="color: red">*</label>
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <input type="text" id="inputHarga6" class="form-control" placeholder="Harga" />
-                                        <small id="hargaHelp" class="form-text text-muted"></small>
-                                    </div>
-                                    </div>
-                    
-                                    <div class="row">
-                                    <div class="col-lg-3">
-                                        <label for="inputFoto6" class="col-form-label">Foto</label>
-                                        <label for="wajib" style="color: red">*</label>
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <div class="input-group">
-                                        <input class="form-control" type="file" id="formFile" style="display: none" onchange="getNameFile(this.value)" />
-                                        <label for="formFile" id="file-input" class="form-control icon text-secondary">No file selected</label>
-                                        <span class="input-group-text"><img src="images/icon/fi_upload.png" /></span>
-                                        </div>
-                                        <small id="fileHelp" class="form-text text-muted" style="margin-left: 1px">File size max. 2 MB</small>
-                                    </div>
-                                    </div>
-                    
-                                    <div class="row">
-                                    <div class="col-lg-3">
-                                        <label for="inputStartRent6" class="col-form-label">Start Rent</label>
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <span> - </span>
-                                        <span class="error-notif"></span>
-                                    </div>
-                                    </div>
-                    
-                                    <div class="row">
-                                    <div class="col-lg-3">
-                                        <label for="inputFinishRent6" class="col-form-label">Finish Rent</label>
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <span> - </span>
-                                        <span class="error-notif"></span>
-                                    </div>
-                                    </div>
-                    
-                                    <div class="row">
-                                    <div class="col-lg-3">
-                                        <label for="inputCreatedRent6" class="col-form-label">Created Rent</label>
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <span> - </span>
-                                        <span class="error-notif"></span>
-                                    </div>
-                                    </div>
-                    
-                                    <div class="row">
-                                    <div class="col-lg-3">
-                                        <label for="inputUpdatedRent6" class="col-form-label">Updated Rent</label>
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <span> - </span>
-                                        <span class="error-notif"></span>
-                                    </div>
-                                    </div>
-                                    
-                                </form>
-                                
-                                </div>
-                                <button type="button" class="btn-custom">Cancel</button>
-                                <button type="button" class="btn-custom-save">Save</button>
-                            </div>
-                            </div>
-                            
-                            
-                            
-                        </div>
-                    </section>
-                </div>
+<link rel="stylesheet" href="stylesheets/newCarStyle.css">
+<section id="page-5">
+    <div class="container pt-4">
+        <div class="row">
+        <div class="col-12">
+            <div class="sub-tree d-flex mt-3 mb-3">
+            <a href="#">
+                <p class="fw-bold">Cars</p>
+            </a>
+            <i class="fa fa-solid fa-chevron-right mx-2"></i>
+            <a href="#">
+                <p class="fw-bold">List Car</p>
+            </a>
+            <i class="fa fa-solid fa-chevron-right mx-2"></i>
+            <a href="#">
+                <p>Add New Car</p>
+            </a>
             </div>
+            <h2>Add New Car</h2>
+            <div class="form-body mb-3">
+            <form>
+                <div class="row">
+                <div class="col-lg-3">
+                    <label for="inputName" class="col-form-label">Nama</label>
+                    <label for="wajib" style="color: red">*</label>
+                </div>
+                <div class="col-lg-9">
+                    <input type="text" id="inputNama6" class="form-control" placeholder="Nama" />
+                    <small id="namaHelp" class="form-text text-muted"></small>
+                </div>
+                </div>
 
-        </section>
-        <!-- BAGIAN ISI CONTENT BERAKHIR Di SINI -->
-        <!-- CONTENT SECTION END -->
+                <div class="row">
+                <div class="col-lg-3">
+                    <label for="inputPassword6" class="col-form-label">Harga</label>
+                    <label for="wajib" style="color: red">*</label>
+                </div>
+                <div class="col-lg-9">
+                    <input type="text" id="inputHarga6" class="form-control" placeholder="Harga" />
+                    <small id="hargaHelp" class="form-text text-muted"></small>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="col-lg-3">
+                    <label for="inputFoto6" class="col-form-label">Foto</label>
+                    <label for="wajib" style="color: red">*</label>
+                </div>
+                <div class="col-lg-9">
+                    <div class="input-group">
+                    <input class="form-control" type="file" id="formFile" style="display: none" onchange="getNameFile(this.value)" />
+                    <label for="formFile" id="file-input" class="form-control icon text-secondary">No file selected</label>
+                    <span class="input-group-text"><img src="images/icon/fi_upload.png" /></span>
+                    </div>
+                    <small id="fileHelp" class="form-text text-muted" style="margin-left: 1px">File size max. 2 MB</small>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="col-lg-3">
+                    <label for="inputStartRent6" class="col-form-label">Start Rent</label>
+                </div>
+                <div class="col-lg-9">
+                    <span> - </span>
+                    <span class="error-notif"></span>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="col-lg-3">
+                    <label for="inputFinishRent6" class="col-form-label">Finish Rent</label>
+                </div>
+                <div class="col-lg-9">
+                    <span> - </span>
+                    <span class="error-notif"></span>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="col-lg-3">
+                    <label for="inputCreatedRent6" class="col-form-label">Created Rent</label>
+                </div>
+                <div class="col-lg-9">
+                    <span> - </span>
+                    <span class="error-notif"></span>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="col-lg-3">
+                    <label for="inputUpdatedRent6" class="col-form-label">Updated Rent</label>
+                </div>
+                <div class="col-lg-9">
+                    <span> - </span>
+                    <span class="error-notif"></span>
+                </div>
+                </div>
+                
+            </form>
+            
+            </div>
+            <button type="button" class="btn-custom">Cancel</button>
+            <button type="button" class="btn-custom-save">Save</button>
+        </div>
+        </div>
+        
+        
+        
     </div>
-
-    <%- include('partials/script.ejs'); %>
-    <script src="https://kit.fontawesome.com/7441451cf7.js" crossorigin="anonymous"></script>
-    <script>
-      function getNameFile(nameFile) {
-        const date = new Date();
-        let result = `IMG/${date.getMonth()}/${date.getFullYear()}/001`;
-        document.getElementById('file-input').innerHTML = result;
-      }
-    </script>
-</body>
-
-</html>
+</section>
+                
+<script>
+    function getNameFile(nameFile) {
+    const date = new Date();
+    let result = `IMG/${date.getMonth()}/${date.getFullYear()}/001`;
+    document.getElementById('file-input').innerHTML = result;
+    }
+</script>
