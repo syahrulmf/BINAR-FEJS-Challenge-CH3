@@ -1,21 +1,22 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+
+const router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res) {
-  res.render('index', {layout : false, title : 'BCR - Login'});
+router.get('/', (req, res) => {
+  res.render('index', { layout: false, judul: 'BCR - Login' });
 });
 
-router.get('/dashboard', function(req, res) {
-  res.render('dashboard', {title : 'BCR - Dashboard'});
+router.get('/dashboard', (req, res) => {
+  res.render('dashboard', { judul: 'BCR - Dashboard' });
 });
 
-router.get('/list-car', function(req, res) {
-  res.render('listCar', {title : 'BCR - List Car'});
+router.get('/list-car', (req, res) => {
+  res.render('listCar', { judul: 'BCR - List Car' });
 });
 
-router.get('/add-new-car', function(req, res) {
-  res.render('newCar', {title : 'BCR - Add New Car'});
+router.get('/add-new-car', (req, res) => {
+  res.render('newCar', { judul: 'BCR - Add New Car' });
 });
 
 module.exports = router;
