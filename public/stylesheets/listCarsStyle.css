@@ -53,6 +53,50 @@ span.list-car {
   width: 142px;
 }
 
+/* MODAL */
+
+.modal {
+  margin: 150px auto;
+}
+
+.modal-dialog {
+  max-width: 387px;
+}
+
+.btn.btn-save-modal {
+  background-color: #0d28a6;
+  color: white;
+  padding: 8px 35px;
+  font-weight: bold;
+}
+
+.btn.btn-save-modal:hover {
+  background-color: white;
+  border: 2px solid #0d28a6;
+  color: #0d28a6;
+}
+
+.btn.btn-close-modal {
+  padding: 8px 35px;
+  color: #0d28a6;
+  background-color: white;
+  border: 2px solid #0d28a6;
+  font-weight: bold;
+}
+
+.btn.btn-close-modal:hover {
+  background-color: #0d28a6;
+  color: white;
+}
+
+.modal-header{
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+/* END MODAL */
 .btn.btn-outline-primary {
   border: 1px solid #aeb7e1;
   color: #aeb7e1;
@@ -130,6 +174,3 @@ span.list-car {
   color: white;
 }
 
-.modal {
-  margin: 150px auto;
-}
